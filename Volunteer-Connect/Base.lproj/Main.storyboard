@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,17 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rDa-pA-5Pz">
-                                <rect key="frame" x="-38" y="0.0" width="677" height="44"/>
-                                <items>
-                                    <navigationItem title="Volunteer-Connect" id="tDA-Ae-r6p"/>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qed-sv-qb3">
-                                <rect key="frame" x="247" y="562" width="106" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qed-sv-qb3">
+                                <rect key="frame" x="66" y="686" width="282" height="30"/>
                                 <state key="normal" title="Start Searching">
                                     <color key="titleColor" red="1" green="0.0" blue="0.12889330165038171" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,20 +27,45 @@
                                     <segue destination="TKw-sC-8GY" kind="show" id="s6o-3n-GIk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-VV-GCF">
-                                <rect key="frame" x="0.0" y="44" width="600" height="63"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-VV-GCF">
+                                <rect key="frame" x="16" y="64" width="382" height="127"/>
                                 <string key="text">Volunteer-Connect is an awesome application which will make life easier. We connect you to the perfect volunteer organization in the Bay Area. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DbO-sP-ryn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Volunteer-Connect" id="7uG-mV-wYB"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.68903519209800734" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hph-VV-GCF" secondAttribute="trailing" id="0af-VC-t3U"/>
+                            <constraint firstItem="DbO-sP-ryn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="25A-wF-oVY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DbO-sP-ryn" secondAttribute="trailing" constant="-16" id="2kU-e0-Aho"/>
+                            <constraint firstItem="Hph-VV-GCF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Kd-sQ-8Kr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qed-sv-qb3" secondAttribute="bottom" constant="20" id="LUN-0E-mQB"/>
+                            <constraint firstItem="Hph-VV-GCF" firstAttribute="top" secondItem="DbO-sP-ryn" secondAttribute="bottom" constant="20" id="MDk-aN-Emy"/>
+                            <constraint firstItem="DbO-sP-ryn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="fqA-sQ-H18"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qed-sv-qb3" secondAttribute="trailing" constant="50" id="ks2-QZ-gMX"/>
+                            <constraint firstItem="Qed-sv-qb3" firstAttribute="top" secondItem="Hph-VV-GCF" secondAttribute="bottom" constant="239" id="peG-vZ-NYN"/>
+                            <constraint firstItem="Qed-sv-qb3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="tmW-BR-NQc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fqA-sQ-H18"/>
+                                <exclude reference="MDk-aN-Emy"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="190"/>
+            <point key="canvasLocation" x="244" y="190"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Fi6-ln-t1f">
@@ -56,7 +76,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zH0-SZ-EkZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="q6R-MD-tGp">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="srO-nr-cnO">
