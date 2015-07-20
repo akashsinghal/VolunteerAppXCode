@@ -22,13 +22,6 @@
                                     <navigationItem title="Volunteer-Connect" id="tDA-Ae-r6p"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-VV-GCF">
-                                <rect key="frame" x="-272" y="44" width="1098" height="77"/>
-                                <string key="text">Volunteer-Connect is an awesome application which will make life easier. We connect you to the perfect volunteer organization in the Bay Area. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qed-sv-qb3">
                                 <rect key="frame" x="247" y="562" width="106" height="30"/>
                                 <state key="normal" title="Start Searching">
@@ -39,6 +32,13 @@
                                     <segue destination="TKw-sC-8GY" kind="show" id="s6o-3n-GIk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-VV-GCF">
+                                <rect key="frame" x="0.0" y="44" width="600" height="63"/>
+                                <string key="text">Volunteer-Connect is an awesome application which will make life easier. We connect you to the perfect volunteer organization in the Bay Area. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.68903519209800734" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
