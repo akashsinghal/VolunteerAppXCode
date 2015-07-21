@@ -14,6 +14,7 @@
 		38BD5A361B5CA1CE00009E84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38BD5A351B5CA1CE00009E84 /* Images.xcassets */; };
 		38BD5A391B5CA1CE00009E84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BD5A371B5CA1CE00009E84 /* LaunchScreen.xib */; };
 		38BD5A451B5CA1CE00009E84 /* Volunteer_ConnectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BD5A441B5CA1CE00009E84 /* Volunteer_ConnectTests.m */; };
+		A11EFFB61B5DB7A500855C60 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11EFFB51B5DB7A500855C60 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		38BD5A3E1B5CA1CE00009E84 /* Volunteer-ConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Volunteer-ConnectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BD5A431B5CA1CE00009E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38BD5A441B5CA1CE00009E84 /* Volunteer_ConnectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Volunteer_ConnectTests.m; sourceTree = "<group>"; };
+		A11EFFB41B5DB7A500855C60 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A11EFFB51B5DB7A500855C60 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				38BD5A351B5CA1CE00009E84 /* Images.xcassets */,
 				38BD5A371B5CA1CE00009E84 /* LaunchScreen.xib */,
 				38BD5A281B5CA1CE00009E84 /* Supporting Files */,
+				A11EFFB41B5DB7A500855C60 /* MainViewController.h */,
+				A11EFFB51B5DB7A500855C60 /* MainViewController.m */,
 			);
 			path = "Volunteer-Connect";
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				38BD5A311B5CA1CE00009E84 /* ViewController.m in Sources */,
 				38BD5A2E1B5CA1CE00009E84 /* AppDelegate.m in Sources */,
 				38BD5A2B1B5CA1CE00009E84 /* main.m in Sources */,
+				A11EFFB61B5DB7A500855C60 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +420,7 @@
 				38BD5A4A1B5CA1CE00009E84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38BD5A4B1B5CA1CE00009E84 /* Build configuration list for PBXNativeTarget "Volunteer-ConnectTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				38BD5A4D1B5CA1CE00009E84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
